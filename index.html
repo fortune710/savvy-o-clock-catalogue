@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Savvy o'clock Lashes</title>
+</head>
+
+<body class="px-3 md:px-5">
+    <header class="py-4 flex justify-end">
+        <a href="#contact-us" class="px-6 py-2 rounded-full bg-slate-200 font-bold text-foreground">
+            Contact Us
+        </a>
+    </header>
+    <main>
+        <section class="flex flex-col items-center md:flex-row md:justify-center md:gap-10 md:my-7">
+            <img width="200px" height="200px" src="/assets/savvy-o-clock-logo.png" alt="savvy o clock logo" />
+            
+            <div class="flex flex-col items-center">
+                <h1 class="font-borel text-4xl">
+                    Savvy_oclock
+                </h1>
+                <p class="font-sans text-center font-medium">
+                    No 8, 24 crescent, 2nd Avenue, Gwarinpa, Abuja.
+                </p>
+            </div>
+        </section>
+
+        <section class="my-8 md:my-5">
+            <h2 class="font-borel text-3xl">Catalog</h2>
+            <div class="flex flex-col my-2 md:my-5 md:gap-4 md:grid md:grid-cols-3 lg:grid-cols-4">
+
+                <div class="w-full grid-child">
+                    <div class="w-full my-8 mt-0 md:my-0">
+                        <img src="assets/classic.jpg" class="rounded-md aspect-square" width="100%"/>
+                        <h2 class="font-kanit font-semibold my-2 text-2xl">
+                            Classic
+                        </h2>
+    
+                        <button id="classic-btn" class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
+                            See Prices
+                        </button>
+                    </div>
+
+                    <aside id="classic-prices" class="w-full prices hidden">
+                        <div class="w-full">
+                            <ul class="md:mt-5">
+                                <li class="font-semibold text-3xl md:text-lg">
+                                    Prices List
+                                </li>
+                                <li class="h-10 flex items-center md:h-10">
+                                    Classic Full Set - 15,000
+                                </li>
+                                <li title="Only" class="h-10 flex items-center md:h-10">
+                                    Classic Refill - 7,500
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="w-full my-8 md:my-0">
+                    <img src="assets/soft-hybrid.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
+                    <h2 class="font-kanit font-semibold my-2 text-2xl">
+                        Soft Hybrid
+                    </h2>
+
+                    <button class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
+                        See All
+                    </button>
+                </div>
+
+                <div class="w-full my-8 md:my-0">
+                    <img src="assets/light-volume.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
+                    <h2 class="font-kanit font-semibold my-2 text-2xl">
+                        Light Volume
+                    </h2>
+
+                    <button class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
+                        See All
+                    </button>
+                </div>
+
+
+                <div class="w-full my-8 md:my-0">
+                    <img src="assets/mega-volume.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
+                    <h2 class="font-kanit font-semibold my-2 text-2xl">
+                        Mega Volume
+                    </h2>
+
+                    <button class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
+                        See All
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

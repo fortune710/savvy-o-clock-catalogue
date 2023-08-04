@@ -1,0 +1,11 @@
+{
+  "name": "savvy-o-clock-catalogue",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+  },
+  
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
