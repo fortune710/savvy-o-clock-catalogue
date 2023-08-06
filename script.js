@@ -31,17 +31,6 @@ elememts.forEach((elememt) => {
     observer.observe(elememt);
 })
 
-
-
-
-themeButton.addEventListener("click", () => {
-    if(html.classList.contains("light")) {
-        html.classList.replace("light", "dark")
-    } else {
-        html.classList.replace("dark", "light")
-    }
-})
-
 classicButton.addEventListener("click", () => {
     if(classicPrices.classList.contains("hidden")) {
         classicPrices.classList.replace("hidden", "flex");

@@ -10,12 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/output.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/savvy-o-clock-logo.png" type="image/x-icon">
     <title>Savvy o'clock Lashes</title>
 </head>
 
 <body>
-    <header class="py-4 px-3 md:px-5 flex justify-end">
-        <a href="#contact-us" class="px-6 py-2 rounded-full bg-slate-200 font-bold text-foreground">
+    <header class="py-4 px-3 md:px-5 flex justify-between">
+        <img width="50px" height="50px" src="/assets/savvy-o-clock-logo.png" alt="savvy o clock logo" />
+
+        
+        <a href="#contact-us" class="px-6 py-2 flex items-center border border-zinc-500 rounded-full bg-slate-200 font-bold text-foreground">
             Contact Us
         </a>
     </header>
@@ -54,18 +58,21 @@
 
         <section class="my-8 md:my-5">
             <h2 class="font-borel text-3xl">Catalog</h2>
-            <div class="flex flex-col my-2 md:my-5 md:gap-4 md:grid md:grid-cols-3 lg:grid-cols-4">
+            <div class="flex flex-col gap-3 my-2 md:my-5 md:gap-4 md:grid md:grid-cols-3 lg:grid-cols-4">
 
-                <div class="w-full grid-child fade-in">
-                    <div class="w-full my-8 mt-0 md:my-0">
+                <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
+                    <div class="w-full">
                         <img src="assets/classic.jpg" class="rounded-md aspect-square" width="100%"/>
-                        <h2 class="font-kanit font-semibold my-2 text-2xl">
-                            Classic
-                        </h2>
-    
-                        <button id="classic-btn" class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
-                            See Prices
-                        </button>
+                        
+                        <div class="flex items-center mt-2 gap-3">
+                            <h2 class="font-borel text-2xl">
+                                Classic
+                            </h2>
+        
+                            <button id="classic-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
+                                See Prices
+                            </button>
+                        </div>
                     </div>
 
                     <aside id="classic-prices" class="w-full prices hidden">
@@ -85,16 +92,19 @@
                     </aside>
                 </div>
 
-                <div class="w-full grid-child fade-in">
-                    <div class="w-full my-8 md:my-0">
+                <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
+                    <div class="w-full">
                         <img src="assets/soft-hybrid.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
-                        <h2 class="font-kanit font-semibold my-2 text-2xl">
-                            Soft Hybrid
-                        </h2>
-    
-                        <button id="hybrid-btn" class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
-                            See All
-                        </button>
+                        
+                        <div class="flex self-center items-center mt-2 gap-3">
+                            <h2 class="font-borel my-2 text-2xl">
+                                Soft Hybrid
+                            </h2>
+        
+                            <button id="hybrid-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
+                                See Prices
+                            </button>
+                        </div>
                     </div>
 
                     <aside id="hybrid-prices" class="w-full prices hidden">
@@ -114,16 +124,19 @@
                     </aside>
                 </div>
 
-                <div class="w-full grid-child fade-in">
-                    <div class="w-full my-8 md:my-0">
+                <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
+                    <div class="w-full">
                         <img src="assets/light-volume.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
-                        <h2 class="font-kanit font-semibold my-2 text-2xl">
-                            Light Volume
-                        </h2>
-    
-                        <button id="light-volume-btn" class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
-                            See All
-                        </button>
+                        
+                        <div class="flex items-center mt-2 gap-3">
+                            <h2 class="font-borel my-2 text-2xl">
+                                Light Volume
+                            </h2>
+        
+                            <button id="light-volume-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
+                                See Prices
+                            </button>
+                        </div>
                     </div>
 
                     <aside id="light-volume-prices" class="w-full prices hidden">
@@ -144,16 +157,19 @@
 
                 </div>
 
-                <div class="w-full grid-child fade-in">
-                    <div class="w-full my-8 md:my-0">
+                <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
+                    <div class="w-full">
                         <img src="assets/mega-volume.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
-                        <h2 class="font-kanit font-semibold my-2 text-2xl">
-                            Mega Volume
-                        </h2>
-    
-                        <button id="mega-volume-btn" class="font-sans bg-pink-600 text-white w-full h-10 font-semibold">
-                            See Prices
-                        </button>
+                        
+                        <div class="flex items-center mt-2 gap-3">
+                            <h2 class="font-borel my-2 text-2xl">
+                                Mega Volume
+                            </h2>
+        
+                            <button id="mega-volume-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
+                                See Prices
+                            </button>                        
+                        </div>
                     </div>
 
                     <aside id="mega-volume-prices" class="w-full prices hidden">
