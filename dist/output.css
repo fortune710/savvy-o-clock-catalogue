@@ -439,9 +439,20 @@ video {
   --foreground: #121212;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+html[class="dark"] {
+  :root {
+    --background: #222222;
+    --foreground: #f5f5f5;
+  }
 }
 
 *, ::before, ::after {
@@ -549,6 +560,16 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -590,8 +611,24 @@ body {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -608,9 +645,19 @@ body {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
@@ -626,6 +673,11 @@ body {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -675,6 +727,11 @@ body {
   color: var(--foreground);
 }
 
+.text-pink-600 {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -694,6 +751,13 @@ body {
   animation: fade-in 0.2s ease-in;
 }
 
+.fade-in {
+}
+
+.fade-in-active {
+  animation: scroll-and-fade-in 0.7s ease-in;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -701,6 +765,18 @@ body {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes scroll-and-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -728,12 +804,12 @@ body {
     display: grid;
   }
 
-  .md\:h-14 {
-    height: 3.5rem;
-  }
-
   .md\:h-10 {
     height: 2.5rem;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:grid-cols-3 {
@@ -759,11 +835,6 @@ body {
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .md\:text-lg {
