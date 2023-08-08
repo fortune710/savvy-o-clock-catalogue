@@ -10,8 +10,8 @@ const hybridPrices = document.getElementById("hybrid-prices");
 const lightVolumeButton = document.getElementById("light-volume-btn");
 const lightVolumePrices = document.getElementById("light-volume-prices");
 
-const megaVolumeButton = document.getElementById("mega-volume-btn");
-const megaVolumePrices = document.getElementById("mega-volume-prices");
+//const megaVolumeButton = document.getElementById("mega-volume-btn");
+//const megaVolumePrices = document.getElementById("mega-volume-prices");
 
 const elememts = document.querySelectorAll(".fade-in")
 
@@ -70,6 +70,8 @@ lightVolumeButton.addEventListener("click", () => {
     }
 })
 
+/*
+
 megaVolumeButton.addEventListener("click", () => {
     if(megaVolumePrices.classList.contains("hidden")) {
         megaVolumePrices.classList.replace("hidden", "flex");
@@ -82,3 +84,4 @@ megaVolumeButton.addEventListener("click", () => {
         megaVolumeButton.innerText = "See Prices";
     }
 })
+*/

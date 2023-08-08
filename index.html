@@ -29,7 +29,7 @@
             <img width="200px" height="200px" src="/assets/savvy-o-clock-logo.png" alt="savvy o clock logo" />
             
             <div class="flex flex-col gap-3 md:gap-2 my-5 md:my-0 items-center">
-                <h1 class="font-borel text-4xl">
+                <h1 class="font-sans font-semibold text-4xl">
                     Savvy_oclock
                 </h1>
                 <p class="font-sans text-center font-medium">
@@ -62,7 +62,7 @@
 
                 <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
                     <div class="w-full">
-                        <img src="assets/classic-1.jpg" class="rounded-md aspect-square" width="100%"/>
+                        <img alt="classic" src="assets/classic-1.jpg" class="object-cover rounded-md aspect-square" width="100%"/>
                         
                         <div class="flex items-center mt-2 gap-3">
                             <h2 class="font-borel text-2xl">
@@ -77,7 +77,7 @@
 
                     <aside id="classic-prices" class="w-full prices hidden">
                         <div class="w-full">
-                            <ul class="md:mt-5">
+                            <ul class="mt-3 md:mt-5">
                                 <li class="font-semibold text-3xl md:text-lg">
                                     Prices List
                                 </li>
@@ -94,11 +94,11 @@
 
                 <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
                     <div class="w-full">
-                        <img src="assets/soft-hybrid-1.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
+                        <img alt="hybrid" src="assets/soft-hybrid-1.jpg" class="object-cover rounded-md aspect-square" width="100%" height="300px"/>
                         
                         <div class="flex self-center items-center mt-2 gap-3">
                             <h2 class="font-borel my-2 text-2xl">
-                                Soft Hybrid
+                                Hybrid
                             </h2>
         
                             <button id="hybrid-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
@@ -109,7 +109,7 @@
 
                     <aside id="hybrid-prices" class="w-full prices hidden">
                         <div class="w-full">
-                            <ul class="md:mt-5">
+                            <ul class="mt-3 md:mt-5">
                                 <li class="font-semibold text-3xl md:text-lg">
                                     Prices List
                                 </li>
@@ -126,11 +126,11 @@
 
                 <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
                     <div class="w-full">
-                        <img src="assets/light-volume-1.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
+                        <img alt="volume" src="assets/light-volume-1.jpg" class="object-cover rounded-md aspect-square" width="100%" height="300px"/>
                         
                         <div class="flex items-center mt-2 gap-3">
                             <h2 class="font-borel my-2 text-2xl">
-                                Light Volume
+                                Volume
                             </h2>
         
                             <button id="light-volume-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
@@ -141,15 +141,15 @@
 
                     <aside id="light-volume-prices" class="w-full prices hidden">
                         <div class="w-full">
-                            <ul class="md:mt-5">
+                            <ul class="mt-3 md:mt-5">
                                 <li class="font-semibold text-3xl md:text-lg">
                                     Prices List
                                 </li>
                                 <li class="h-10 flex items-center md:h-10">
-                                    Light Volume Full Set - 25,000
+                                    Volume Full Set - 25,000
                                 </li>
-                                <li title="Only" class="h-10 flex items-center md:h-10">
-                                    Light Volume Refill - 12,500
+                                <li title="Volume" class="h-10 flex items-center md:h-10">
+                                    Volume Refill - 12,500
                                 </li>
                             </ul>
                         </div>
@@ -157,37 +157,41 @@
 
                 </div>
 
-                <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
-                    <div class="w-full">
-                        <img src="assets/mega-volume-1.jpg" class="rounded-md aspect-square" width="100%" height="300px"/>
-                        
-                        <div class="flex items-center mt-2 gap-3">
-                            <h2 class="font-borel my-2 text-2xl">
-                                Mega Volume
-                            </h2>
-        
-                            <button id="mega-volume-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
-                                See Prices
-                            </button>                        
+                <!-- 
+
+                    <div class="w-full grid-child bg-white border border-slate-100 shadow-sm shadow-zinc-400 py-4 rounded-md fade-in px-4 md:px-0">
+                        <div class="w-full">
+                            <img src="assets/mega-volume-1.jpg" class="object-cover rounded-md aspect-square" width="100%" height="300px"/>
+                            
+                            <div class="flex items-center mt-2 gap-3">
+                                <h2 class="font-borel my-2 text-2xl">
+                                    Mega Volume
+                                </h2>
+            
+                                <button id="mega-volume-btn" class="font-sans rounded-md bg-pink-600 text-white w-full h-10 font-semibold">
+                                    See Prices
+                                </button>                        
+                            </div>
                         </div>
+    
+                        <aside id="mega-volume-prices" class="w-full prices hidden">
+                            <div class="w-full">
+                                <ul class="mt-3 md:mt-5">
+                                    <li class="font-semibold text-3xl md:text-lg">
+                                        Prices List
+                                    </li>
+                                    <li class="h-10 flex items-center md:h-10">
+                                        Mega Volume Full Set - 30,000
+                                    </li>
+                                    <li title="Only" class="h-10 flex items-center md:h-10">
+                                        Mega Volume Refill - 15,000
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
                     </div>
 
-                    <aside id="mega-volume-prices" class="w-full prices hidden">
-                        <div class="w-full">
-                            <ul class="md:mt-5">
-                                <li class="font-semibold text-3xl md:text-lg">
-                                    Prices List
-                                </li>
-                                <li class="h-10 flex items-center md:h-10">
-                                    Mega Volume Full Set - 30,000
-                                </li>
-                                <li title="Only" class="h-10 flex items-center md:h-10">
-                                    Mega Volume Refill - 15,000
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
+                -->
 
             </div>
         </section>
@@ -206,11 +210,20 @@
 
         <a 
             class="flex items-center gap-3 font-semibold text-foreground text-center" 
-            href=""
+            href="tel:07067089908"
         >
             <i class="lni lni-phone"></i>
             07067089908
         </a>
+
+        <a 
+            class="flex items-center gap-3 font-semibold text-foreground text-center" 
+            href="tel:08186276298"
+        >
+            <i class="lni lni-phone"></i>
+            08186276298
+        </a>
+
         
         <a 
             class="flex items-center gap-3 font-semibold text-foreground text-center"
